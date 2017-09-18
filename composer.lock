@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a9b1458bfd66ed531f55f381484a51e9",
+    "content-hash": "88e50012cd7b0b487ce538b2843b0fed",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -1831,6 +1831,56 @@
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
             "time": "2017-07-29T21:54:42+00:00"
+        },
+        {
+            "name": "topshelfcraft/supersort",
+            "version": "2.0.0",
+            "dist": {
+                "type": "path",
+                "url": "../SuperSort",
+                "reference": "1dfcec869cec5cf688cab77e66734cb1282d2f3a",
+                "shasum": null
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0-beta.28",
+                "php": ">=7.0.0",
+                "roave/security-advisories": "dev-master",
+                "vlucas/phpdotenv": "^2.4.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "SuperSort",
+                "handle": "supersort",
+                "developer": "Michael Rog",
+                "developerUrl": "https://buzzingpixel.com",
+                "schemaVersion": "0.0.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "class": "topshelfcraft\\supersort\\SuperSort"
+            },
+            "autoload": {
+                "psr-4": {
+                    "topshelfcraft\\supersort\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Michael Rog",
+                    "homepage": "https://michaelrog.com"
+                },
+                {
+                    "name": "TJ Draper",
+                    "homepage": "https://buzzingpixel.com"
+                }
+            ],
+            "description": "TODO",
+            "keywords": [
+                "SuperSort",
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms"
+            ]
         },
         {
             "name": "twig/twig",
