@@ -1852,7 +1852,7 @@
                 "name": "SuperSort",
                 "handle": "supersort",
                 "developer": "Michael Rog",
-                "developerUrl": "https://buzzingpixel.com",
+                "developerUrl": "https://michaelrog.com",
                 "schemaVersion": "0.0.0.0",
                 "hasCpSettings": false,
                 "hasCpSection": false,
@@ -1873,7 +1873,7 @@
                     "homepage": "https://buzzingpixel.com"
                 }
             ],
-            "description": "TODO",
+            "description": "A super-duper sorting filter for your CraftCMS templates",
             "keywords": [
                 "SuperSort",
                 "cms",

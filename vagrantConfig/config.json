@@ -9,6 +9,11 @@
             "relative": true,
             "map": "/",
             "to": "/home/vagrant/development/"
+        },
+        {
+            "relative": true,
+            "map": "/../SuperSort",
+            "to": "/home/vagrant/SuperSort/"
         }
     ],
     "databases": [
