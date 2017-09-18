@@ -1838,7 +1838,7 @@
             "dist": {
                 "type": "path",
                 "url": "../SuperSort",
-                "reference": "1dfcec869cec5cf688cab77e66734cb1282d2f3a",
+                "reference": "6ad0c3dc257e7a70579c5e5b4c8ddcda762011f1",
                 "shasum": null
             },
             "require": {
@@ -1851,12 +1851,14 @@
             "extra": {
                 "name": "SuperSort",
                 "handle": "supersort",
-                "developer": "Michael Rog",
-                "developerUrl": "https://michaelrog.com",
+                "developer": "Top Shelf Craft",
+                "developerUrl": "https://topshelfcraft.com",
                 "schemaVersion": "0.0.0.0",
                 "hasCpSettings": false,
                 "hasCpSection": false,
-                "class": "topshelfcraft\\supersort\\SuperSort"
+                "class": "topshelfcraft\\supersort\\SuperSort",
+                "changelogUrl": "https://github.com/TopShelfCraft/SuperSort/raw/master/CHANGELOG.md",
+                "downloadUrl": "https://github.com/TopShelfCraft/SuperSort/releases"
             },
             "autoload": {
                 "psr-4": {
@@ -1880,7 +1882,10 @@
                 "craft",
                 "craft-plugin",
                 "craftcms"
-            ]
+            ],
+            "support": {
+                "docs": "https://github.com/TopShelfCraft/SuperSort"
+            }
         },
         {
             "name": "twig/twig",
