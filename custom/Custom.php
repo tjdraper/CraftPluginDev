@@ -2,8 +2,10 @@
 
 namespace dev\custom;
 
+use Craft;
 use yii\base\Module;
 use dev\custom\controllers\TestController;
+use craft\console\Application as ConsoleApplication;
 
 /**
  * Class Custom
@@ -12,11 +14,6 @@ class Custom extends Module
 {
     /** @var Custom $plugin */
     public static $instance;
-
-    /** @var array $controllerMap */
-    public $controllerMap = [
-        'test' => TestController::class,
-    ];
 
     /**
      * Initialize plugin
