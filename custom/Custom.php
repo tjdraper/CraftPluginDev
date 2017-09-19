@@ -10,8 +10,20 @@ use dev\custom\controllers\TestController;
  */
 class Custom extends Module
 {
+    /** @var Custom $plugin */
+    public static $instance;
+
     /** @var array $controllerMap */
     public $controllerMap = [
         'test' => TestController::class,
     ];
+
+    /**
+     * Initialize plugin
+     */
+    public function init()
+    {
+        parent::init();
+        self::$instance = $this;
+    }
 }
