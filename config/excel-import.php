@@ -1,0 +1,5 @@
+<?php
+
+// return [
+//     'validImportTypes' => 'asdf',
+// ];
