@@ -7,6 +7,49 @@
     "content-hash": "e12ec78f3de7a55145475778429e558a",
     "packages": [
         {
+            "name": "ccampbell/chromephp",
+            "version": "4.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ccampbell/chromephp.git",
+                "reference": "c3c297615d48ae5b2a86a82311152d1ed095fcef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ccampbell/chromephp/zipball/c3c297615d48ae5b2a86a82311152d1ed095fcef",
+                "reference": "c3c297615d48ae5b2a86a82311152d1ed095fcef",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "ChromePhp": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Craig Campbell",
+                    "email": "iamcraigcampbell@gmail.com",
+                    "homepage": "http://craig.is",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Log variables to the Chrome console (via Chrome Logger Google Chrome extension).",
+            "homepage": "http://github.com/ccampbell/chromephp",
+            "keywords": [
+                "log",
+                "logging"
+            ],
+            "time": "2013-06-26T03:44:33+00:00"
+        },
+        {
             "name": "cebe/markdown",
             "version": "1.1.2",
             "source": {
@@ -1015,6 +1058,63 @@
             "time": "2017-06-30T06:21:01+00:00"
         },
         {
+            "name": "phpoffice/phpexcel",
+            "version": "1.8.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPOffice/PHPExcel.git",
+                "reference": "372c7cbb695a6f6f1e62649381aeaa37e7e70b32"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPOffice/PHPExcel/zipball/372c7cbb695a6f6f1e62649381aeaa37e7e70b32",
+                "reference": "372c7cbb695a6f6f1e62649381aeaa37e7e70b32",
+                "shasum": ""
+            },
+            "require": {
+                "ext-xml": "*",
+                "ext-xmlwriter": "*",
+                "php": ">=5.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "PHPExcel": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Maarten Balliauw",
+                    "homepage": "http://blog.maartenballiauw.be"
+                },
+                {
+                    "name": "Mark Baker"
+                },
+                {
+                    "name": "Franck Lefevre",
+                    "homepage": "http://blog.rootslabs.net"
+                },
+                {
+                    "name": "Erik Tilt"
+                }
+            ],
+            "description": "PHPExcel - OpenXML - Read, Create and Write Spreadsheet documents in PHP - Spreadsheet engine",
+            "homepage": "http://phpexcel.codeplex.com",
+            "keywords": [
+                "OpenXML",
+                "excel",
+                "php",
+                "spreadsheet",
+                "xls",
+                "xlsx"
+            ],
+            "time": "2015-05-01T07:00:55+00:00"
+        },
+        {
             "name": "pixelandtonic/imagine",
             "version": "v0.7.1.1",
             "source": {
@@ -1838,13 +1938,16 @@
             "dist": {
                 "type": "path",
                 "url": "../excel-importer",
-                "reference": "d4a7b974596b343815d396392d38e7f0d00bdd61",
+                "reference": "e7a45d1ae417f183548121357f599684e43fb543",
                 "shasum": null
             },
             "require": {
+                "ccampbell/chromephp": "~4.1",
                 "craftcms/cms": "^3.0.0-beta.28",
                 "php": ">=7.0.0",
+                "phpoffice/phpexcel": "~1.8",
                 "roave/security-advisories": "dev-master",
+                "symfony/filesystem": "^2.7 || ^3.0",
                 "vlucas/phpdotenv": "^2.4.0"
             },
             "type": "craft-plugin",
