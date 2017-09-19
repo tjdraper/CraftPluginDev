@@ -14,6 +14,11 @@
             "relative": true,
             "map": "/../SuperSort",
             "to": "/home/vagrant/SuperSort/"
+        },
+        {
+            "relative": true,
+            "map": "/../excel-importer",
+            "to": "/home/vagrant/excel-importer/"
         }
     ],
     "databases": [

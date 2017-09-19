@@ -24,7 +24,8 @@
         "craftcms/cms": "^3.0.0-beta.28",
         "vlucas/phpdotenv": "^2.4.0",
         "roave/security-advisories": "dev-master",
-        "topshelfcraft/supersort": "^2.0"
+        "topshelfcraft/supersort": "^2.0",
+        "topshelfcraft/excelimport": "^0.0.2"
     },
     "config": {
         "optimize-autoloader": true
@@ -41,6 +42,15 @@
         {
             "type": "path",
             "url": "../SuperSort"
+        },
+        {
+            "type": "path",
+            "url": "../excel-importer"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "dev\\custom\\": "custom/"
+        }
+    }
 }

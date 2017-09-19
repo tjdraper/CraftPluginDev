@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "88e50012cd7b0b487ce538b2843b0fed",
+    "content-hash": "e12ec78f3de7a55145475778429e558a",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -1831,6 +1831,56 @@
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
             "time": "2017-07-29T21:54:42+00:00"
+        },
+        {
+            "name": "topshelfcraft/excelimport",
+            "version": "0.0.2",
+            "dist": {
+                "type": "path",
+                "url": "../excel-importer",
+                "reference": "d4a7b974596b343815d396392d38e7f0d00bdd61",
+                "shasum": null
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0-beta.28",
+                "php": ">=7.0.0",
+                "roave/security-advisories": "dev-master",
+                "vlucas/phpdotenv": "^2.4.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Excel Import",
+                "handle": "excel-import",
+                "developer": "Top Shelf Craft",
+                "developerUrl": "https://topshelfcraft.com",
+                "schemaVersion": "0.0.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "class": "topshelfcraft\\excelimport\\ExcelImport"
+            },
+            "autoload": {
+                "psr-4": {
+                    "topshelfcraft\\excelimport\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Aaron Waldon",
+                    "homepage": "https://www.causingeffect.com"
+                },
+                {
+                    "name": "TJ Draper",
+                    "homepage": "https://buzzingpixel.com"
+                }
+            ],
+            "description": "Import from Excel files",
+            "keywords": [
+                "Excel Import",
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms"
+            ]
         },
         {
             "name": "topshelfcraft/supersort",

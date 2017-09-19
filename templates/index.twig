@@ -1,0 +1,18 @@
+{#{% set test = {
+    stuff: 'thing',
+    thing: 'stuff',
+} %}
+
+{% set test = test|supersort('asort') %}
+
+{{ dump(test) }}#}
+
+{#{% set entries = craft.entries.section('testEntries') %}
+
+{% set test = entries|supersort() %}
+
+{{ dump(test) }}#}
+
+{#{% for entry in entries %}
+    {{ entry.title }}<br><br><br>
+{% endfor %}#}

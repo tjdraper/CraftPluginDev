@@ -19,5 +19,5 @@
  */
 
 return [
-
+    'excel-import-testing' => 'custom/test/test-route',
 ];
