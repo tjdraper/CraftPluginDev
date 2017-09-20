@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e12ec78f3de7a55145475778429e558a",
+    "content-hash": "92280b12f8d1d0f1884383ce61bc5fc9",
     "packages": [
         {
             "name": "ccampbell/chromephp",
@@ -1977,6 +1977,60 @@
                 }
             ],
             "description": "Import from Excel files",
+            "keywords": [
+                "Excel Import",
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms"
+            ]
+        },
+        {
+            "name": "topshelfcraft/legacylogin",
+            "version": "0.0.5",
+            "dist": {
+                "type": "path",
+                "url": "../Legacy-Login",
+                "reference": "80f3596a43ce4b726bed97df9228e76d313753a7",
+                "shasum": null
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0-beta.28",
+                "php": ">=7.0.0",
+                "roave/security-advisories": "dev-master",
+                "vlucas/phpdotenv": "^2.4.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Legacy Login",
+                "handle": "legacy-login",
+                "developer": "Top Shelf Craft",
+                "developerUrl": "https://topshelfcraft.com",
+                "schemaVersion": "0.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "class": "topshelfcraft\\legacylogin\\LegacyLogin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "topshelfcraft\\legacylogin\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Michael Rog",
+                    "homepage": "https://michaelrog.com/"
+                },
+                {
+                    "name": "Aaron Waldon",
+                    "homepage": "https://www.causingeffect.com"
+                },
+                {
+                    "name": "TJ Draper",
+                    "homepage": "https://buzzingpixel.com"
+                }
+            ],
+            "description": "User-base migration made simple.",
             "keywords": [
                 "Excel Import",
                 "cms",

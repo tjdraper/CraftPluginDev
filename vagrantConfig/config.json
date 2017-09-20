@@ -19,6 +19,11 @@
             "relative": true,
             "map": "/../excel-importer",
             "to": "/home/vagrant/excel-importer/"
+        },
+        {
+            "relative": true,
+            "map": "/../Legacy-Login",
+            "to": "/home/vagrant/Legacy-Login/"
         }
     ],
     "databases": [

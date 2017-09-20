@@ -25,7 +25,8 @@
         "vlucas/phpdotenv": "^2.4.0",
         "roave/security-advisories": "dev-master",
         "topshelfcraft/supersort": "^2.0",
-        "topshelfcraft/excelimport": "^0.0.2"
+        "topshelfcraft/excelimport": "^0.0.2",
+        "topshelfcraft/legacylogin": "^0.0.5"
     },
     "config": {
         "optimize-autoloader": true
@@ -46,6 +47,10 @@
         {
             "type": "path",
             "url": "../excel-importer"
+        },
+        {
+            "type": "path",
+            "url": "../Legacy-Login"
         }
     ],
     "autoload": {
