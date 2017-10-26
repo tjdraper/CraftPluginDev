@@ -26,7 +26,8 @@
         "roave/security-advisories": "dev-master",
         "topshelfcraft/supersort": "^2.0",
         "topshelfcraft/excelimport": "^0.0.2",
-        "topshelfcraft/legacylogin": "^0.0.5"
+        "topshelfcraft/legacylogin": "^0.0.5",
+        "buzzingpixel/craft-static": "^1.0.0"
     },
     "config": {
         "optimize-autoloader": true
@@ -51,6 +52,10 @@
         {
             "type": "path",
             "url": "../Legacy-Login"
+        },
+        {
+            "type": "path",
+            "url": "../craft-static"
         }
     ],
     "autoload": {

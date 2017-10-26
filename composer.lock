@@ -4,8 +4,54 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "92280b12f8d1d0f1884383ce61bc5fc9",
+    "content-hash": "4c0ad61f86ada7bac52a70ede36664b4",
     "packages": [
+        {
+            "name": "buzzingpixel/craft-static",
+            "version": "1.0.0",
+            "dist": {
+                "type": "path",
+                "url": "../craft-static",
+                "reference": "2886cb4d04c71a6ea1d03f225548b2cd8b070026",
+                "shasum": null
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0-beta.29",
+                "php": ">=7.0.0",
+                "roave/security-advisories": "dev-master"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Craft Static",
+                "handle": "craft-static",
+                "developer": "TJ Draper",
+                "developerUrl": "https://buzzingpixel.com",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "class": "buzzingpixel\\craftstatic\\Craftstatic"
+            },
+            "autoload": {
+                "psr-4": {
+                    "buzzingpixel\\craftstatic\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "TJ Draper",
+                    "email": "tj@buzzingpixel.com",
+                    "homepage": "https://buzzingpixel.com"
+                }
+            ],
+            "description": "Static file caching for Craft 3",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craft-static",
+                "craftcms"
+            ]
+        },
         {
             "name": "ccampbell/chromephp",
             "version": "4.1.0",
@@ -370,16 +416,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.0-beta.28",
+            "version": "3.0.0-beta.29",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "b273ef58010b88f057a5b88143d8d2c0b2780905"
+                "reference": "33d2fe40f928d6ba9bfefa9811e033f2889352a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/b273ef58010b88f057a5b88143d8d2c0b2780905",
-                "reference": "b273ef58010b88f057a5b88143d8d2c0b2780905",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/33d2fe40f928d6ba9bfefa9811e033f2889352a4",
+                "reference": "33d2fe40f928d6ba9bfefa9811e033f2889352a4",
                 "shasum": ""
             },
             "require": {
@@ -389,9 +435,18 @@
                 "creocoder/yii2-nested-sets": "~0.9.0",
                 "danielstjules/stringy": "~3.0.0",
                 "enshrined/svg-sanitize": "~0.6.0",
+                "ext-curl": "*",
+                "ext-dom": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ext-openssl": "*",
+                "ext-pcre": "*",
+                "ext-pdo": "*",
+                "ext-zip": "*",
                 "guzzlehttp/guzzle": "~6.2.2",
                 "league/flysystem": "~1.0.35",
                 "mikehaertl/php-shellcommand": "~1.2.5",
+                "php": ">=7.0.0",
                 "pixelandtonic/imagine": "0.7.1.1",
                 "seld/cli-prompt": "^1.0",
                 "twig/twig": "~2.3.0",
@@ -436,7 +491,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2017-09-15T22:21:31+00:00"
+            "time": "2017-09-29T17:37:43+00:00"
         },
         {
             "name": "craftcms/plugin-installer",
@@ -873,16 +928,16 @@
         },
         {
             "name": "justinrainbow/json-schema",
-            "version": "5.2.1",
+            "version": "5.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/justinrainbow/json-schema.git",
-                "reference": "429be236f296ca249d61c65649cdf2652f4a5e80"
+                "reference": "d283e11b6e14c6f4664cf080415c4341293e5bbd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/429be236f296ca249d61c65649cdf2652f4a5e80",
-                "reference": "429be236f296ca249d61c65649cdf2652f4a5e80",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/d283e11b6e14c6f4664cf080415c4341293e5bbd",
+                "reference": "d283e11b6e14c6f4664cf080415c4341293e5bbd",
                 "shasum": ""
             },
             "require": {
@@ -891,7 +946,6 @@
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.1",
                 "json-schema/json-schema-test-suite": "1.2.0",
-                "phpdocumentor/phpdocumentor": "^2.7",
                 "phpunit/phpunit": "^4.8.22"
             },
             "bin": [
@@ -936,7 +990,7 @@
                 "json",
                 "schema"
             ],
-            "time": "2017-05-16T21:06:09+00:00"
+            "time": "2017-10-21T13:15:38+00:00"
         },
         {
             "name": "league/flysystem",
@@ -1275,12 +1329,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "140175d0d4a71950b045fb87cc7d979340b9f16e"
+                "reference": "e5c17bfc7c963c4fcd0c851dbef14745d1fc54c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/140175d0d4a71950b045fb87cc7d979340b9f16e",
-                "reference": "140175d0d4a71950b045fb87cc7d979340b9f16e",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/e5c17bfc7c963c4fcd0c851dbef14745d1fc54c0",
+                "reference": "e5c17bfc7c963c4fcd0c851dbef14745d1fc54c0",
                 "shasum": ""
             },
             "conflict": {
@@ -1288,7 +1342,7 @@
                 "amphp/artax": ">=2,<2.0.6|<1.0.6",
                 "aws/aws-sdk-php": ">=3,<3.2.1",
                 "bugsnag/bugsnag-laravel": ">=2,<2.0.2",
-                "cakephp/cakephp": ">=3,<3.0.15|>=2,<2.4.99|>=2.5,<2.5.99|>=2.6,<2.6.12|>=1.3,<1.3.18|>=2.7,<2.7.6|>=3.1,<3.1.4",
+                "cakephp/cakephp": ">=2,<2.4.99|>=1.3,<1.3.18|>=3,<3.0.15|>=2.5,<2.5.99|>=2.6,<2.6.12|>=2.7,<2.7.6|>=3.1,<3.1.4",
                 "cart2quote/module-quotation": ">=4.1.6,<=4.4.5|>=5,<5.4.4",
                 "cartalyst/sentry": "<2.1",
                 "codeigniter/framework": "<=3.0.6",
@@ -1347,21 +1401,21 @@
                 "symfony/http-foundation": ">=2,<2.3.27|>=2.4,<2.5.11|>=2.6,<2.6.6",
                 "symfony/http-kernel": ">=2,<2.3.29|>=2.4,<2.5.12|>=2.6,<2.6.8",
                 "symfony/routing": ">=2,<2.0.19",
-                "symfony/security": ">=2.7.30,<2.7.32|>=2.8.23,<2.8.25|>=3.2.10,<3.2.12|>=3.3.3,<3.3.5|>=2.3,<2.3.37|>=2.4,<2.6.13|>=2.7,<2.7.9|>=2,<2.0.25|>=2.1,<2.1.13|>=2.2,<2.2.9",
-                "symfony/security-core": ">=2.7.30,<2.7.32|>=2.8.23,<2.8.25|>=3.2.10,<3.2.12|>=3.3.3,<3.3.5|>=2.8,<2.8.6|>=3,<3.0.6|>=2.4,<2.6.13|>=2.7,<2.7.9",
+                "symfony/security": ">=2.7.30,<2.7.32|>=2.8.23,<2.8.25|>=3.2.10,<3.2.12|>=3.3.3,<3.3.5|>=2,<2.0.25|>=2.1,<2.1.13|>=2.2,<2.2.9|>=2.3,<2.3.37|>=2.4,<2.6.13|>=2.7,<2.7.9",
+                "symfony/security-core": ">=2.8,<2.8.6|>=3,<3.0.6|>=2.7.30,<2.7.32|>=2.8.23,<2.8.25|>=3.2.10,<3.2.12|>=3.3.3,<3.3.5|>=2.4,<2.6.13|>=2.7,<2.7.9",
                 "symfony/security-http": ">=2.4,<2.7.13|>=2.3,<2.3.41|>=2.8,<2.8.6|>=3,<3.0.6",
                 "symfony/serializer": ">=2,<2.0.11",
-                "symfony/symfony": ">=2,<2.3.41|>=2.4,<2.7.13|>=2.7.30,<2.7.32|>=2.8.23,<2.8.25|>=3.2.10,<3.2.12|>=3.3.3,<3.3.5|>=2.8,<2.8.6|>=3,<3.0.6",
+                "symfony/symfony": ">=2,<2.3.41|>=2.4,<2.7.13|>=2.8,<2.8.6|>=3,<3.0.6|>=2.7.30,<2.7.32|>=2.8.23,<2.8.25|>=3.2.10,<3.2.12|>=3.3.3,<3.3.5",
                 "symfony/translation": ">=2,<2.0.17",
                 "symfony/validator": ">=2,<2.0.24|>=2.1,<2.1.12|>=2.2,<2.2.5|>=2.3,<2.3.3",
                 "symfony/web-profiler-bundle": ">=2,<2.3.19|>=2.4,<2.4.9|>=2.5,<2.5.4",
                 "symfony/yaml": ">=2,<2.0.22|>=2.1,<2.1.7",
                 "thelia/backoffice-default-template": ">=2.1,<2.1.2",
-                "thelia/thelia": ">=2.1.0-beta1,<2.1.3|>=2.1,<2.1.2",
+                "thelia/thelia": ">=2.1,<2.1.2|>=2.1.0-beta1,<2.1.3",
                 "twig/twig": "<1.20",
-                "typo3/cms": ">=6.2,<6.2.30|>=8,<8.7.5|>=7,<7.6.22",
-                "typo3/flow": ">=2.3,<2.3.16|>=3,<3.0.10|>=3.1,<3.1.7|>=3.2,<3.2.7|>=3.3,<3.3.5|>=1,<1.0.4|>=1.1,<1.1.1|>=2,<2.0.1",
-                "typo3/neos": ">=1.1,<1.1.3|>=1.2,<1.2.13|>=2,<2.0.4",
+                "typo3/cms": ">=6.2,<6.2.30|>=7,<7.6.22|>=8,<8.7.5",
+                "typo3/flow": ">=2.3,<2.3.16|>=3,<3.0.10|>=1.1,<1.1.1|>=2,<2.0.1|>=1,<1.0.4|>=3.1,<3.1.7|>=3.2,<3.2.7|>=3.3,<3.3.5",
+                "typo3/neos": ">=1.2,<1.2.13|>=2,<2.0.4|>=1.1,<1.1.3",
                 "willdurand/js-translation-bundle": "<2.1.1",
                 "yiisoft/yii": ">=1.1.14,<1.1.15",
                 "yiisoft/yii2": "<2.0.5",
@@ -1405,7 +1459,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2017-09-11T12:05:25+00:00"
+            "time": "2017-10-25T09:38:43+00:00"
         },
         {
             "name": "seld/cli-prompt",
@@ -1604,44 +1658,45 @@
         },
         {
             "name": "symfony/console",
-            "version": "v3.3.9",
+            "version": "v3.4.0-BETA1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "a1e1b01293a090cb9ae2ddd221a3251a4a7e4abf"
+                "reference": "0b3c68603ca452d69d713ca5551b5a8799d938f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/a1e1b01293a090cb9ae2ddd221a3251a4a7e4abf",
-                "reference": "a1e1b01293a090cb9ae2ddd221a3251a4a7e4abf",
+                "url": "https://api.github.com/repos/symfony/console/zipball/0b3c68603ca452d69d713ca5551b5a8799d938f1",
+                "reference": "0b3c68603ca452d69d713ca5551b5a8799d938f1",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.5.9|>=7.0.8",
-                "symfony/debug": "~2.8|~3.0",
+                "symfony/debug": "~2.8|~3.0|~4.0",
                 "symfony/polyfill-mbstring": "~1.0"
             },
             "conflict": {
-                "symfony/dependency-injection": "<3.3"
+                "symfony/dependency-injection": "<3.4",
+                "symfony/process": "<3.3"
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/config": "~3.3",
-                "symfony/dependency-injection": "~3.3",
-                "symfony/event-dispatcher": "~2.8|~3.0",
-                "symfony/filesystem": "~2.8|~3.0",
-                "symfony/process": "~2.8|~3.0"
+                "symfony/config": "~3.3|~4.0",
+                "symfony/dependency-injection": "~3.4|~4.0",
+                "symfony/event-dispatcher": "~2.8|~3.0|~4.0",
+                "symfony/lock": "~3.4|~4.0",
+                "symfony/process": "~3.3|~4.0"
             },
             "suggest": {
                 "psr/log": "For using the console logger",
                 "symfony/event-dispatcher": "",
-                "symfony/filesystem": "",
+                "symfony/lock": "",
                 "symfony/process": ""
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.3-dev"
+                    "dev-master": "3.4-dev"
                 }
             },
             "autoload": {
@@ -1668,36 +1723,36 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-09-06T16:40:18+00:00"
+            "time": "2017-10-15T12:36:44+00:00"
         },
         {
             "name": "symfony/debug",
-            "version": "v3.3.9",
+            "version": "v4.0.0-BETA1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "8beb24eec70b345c313640962df933499373a944"
+                "reference": "a76f02e3af359cadacc17b6b1ac0a7f8da912d5b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/8beb24eec70b345c313640962df933499373a944",
-                "reference": "8beb24eec70b345c313640962df933499373a944",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/a76f02e3af359cadacc17b6b1ac0a7f8da912d5b",
+                "reference": "a76f02e3af359cadacc17b6b1ac0a7f8da912d5b",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5.9|>=7.0.8",
+                "php": "^7.1.3",
                 "psr/log": "~1.0"
             },
             "conflict": {
-                "symfony/http-kernel": ">=2.3,<2.3.24|~2.4.0|>=2.5,<2.5.9|>=2.6,<2.6.2"
+                "symfony/http-kernel": "<3.4"
             },
             "require-dev": {
-                "symfony/http-kernel": "~2.8|~3.0"
+                "symfony/http-kernel": "~3.4|~4.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.3-dev"
+                    "dev-master": "4.0-dev"
                 }
             },
             "autoload": {
@@ -1724,20 +1779,20 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2017-09-01T13:23:39+00:00"
+            "time": "2017-10-10T14:32:10+00:00"
         },
         {
             "name": "symfony/filesystem",
-            "version": "v3.3.9",
+            "version": "v3.4.0-BETA1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "b32a0e5f928d0fa3d1dd03c78d020777e50c10cb"
+                "reference": "113da0323f3409ebf8ddf394e9596ffeaf2723dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/b32a0e5f928d0fa3d1dd03c78d020777e50c10cb",
-                "reference": "b32a0e5f928d0fa3d1dd03c78d020777e50c10cb",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/113da0323f3409ebf8ddf394e9596ffeaf2723dc",
+                "reference": "113da0323f3409ebf8ddf394e9596ffeaf2723dc",
                 "shasum": ""
             },
             "require": {
@@ -1746,7 +1801,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.3-dev"
+                    "dev-master": "3.4-dev"
                 }
             },
             "autoload": {
@@ -1773,20 +1828,20 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-29T21:54:42+00:00"
+            "time": "2017-10-03T13:54:22+00:00"
         },
         {
             "name": "symfony/finder",
-            "version": "v3.3.9",
+            "version": "v3.4.0-BETA1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "b2260dbc80f3c4198f903215f91a1ac7fe9fe09e"
+                "reference": "6db4a8ddcd86146761130989eb348451de03de74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/b2260dbc80f3c4198f903215f91a1ac7fe9fe09e",
-                "reference": "b2260dbc80f3c4198f903215f91a1ac7fe9fe09e",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/6db4a8ddcd86146761130989eb348451de03de74",
+                "reference": "6db4a8ddcd86146761130989eb348451de03de74",
                 "shasum": ""
             },
             "require": {
@@ -1795,7 +1850,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.3-dev"
+                    "dev-master": "3.4-dev"
                 }
             },
             "autoload": {
@@ -1822,20 +1877,20 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-29T21:54:42+00:00"
+            "time": "2017-10-02T06:49:52+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.5.0",
+            "version": "v1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "7c8fae0ac1d216eb54349e6a8baa57d515fe8803"
+                "reference": "2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/7c8fae0ac1d216eb54349e6a8baa57d515fe8803",
-                "reference": "7c8fae0ac1d216eb54349e6a8baa57d515fe8803",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296",
+                "reference": "2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296",
                 "shasum": ""
             },
             "require": {
@@ -1847,7 +1902,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.5-dev"
+                    "dev-master": "1.6-dev"
                 }
             },
             "autoload": {
@@ -1881,20 +1936,20 @@
                 "portable",
                 "shim"
             ],
-            "time": "2017-06-14T15:44:48+00:00"
+            "time": "2017-10-11T12:05:26+00:00"
         },
         {
             "name": "symfony/process",
-            "version": "v3.3.9",
+            "version": "v3.4.0-BETA1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "b7666e9b438027a1ea0e1ee813ec5042d5d7f6f0"
+                "reference": "5126fc58beb624763383c178779845bbd04c35ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/b7666e9b438027a1ea0e1ee813ec5042d5d7f6f0",
-                "reference": "b7666e9b438027a1ea0e1ee813ec5042d5d7f6f0",
+                "url": "https://api.github.com/repos/symfony/process/zipball/5126fc58beb624763383c178779845bbd04c35ab",
+                "reference": "5126fc58beb624763383c178779845bbd04c35ab",
                 "shasum": ""
             },
             "require": {
@@ -1903,7 +1958,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.3-dev"
+                    "dev-master": "3.4-dev"
                 }
             },
             "autoload": {
@@ -1930,7 +1985,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-29T21:54:42+00:00"
+            "time": "2017-10-05T22:24:36+00:00"
         },
         {
             "name": "topshelfcraft/excelimport",
@@ -1938,7 +1993,7 @@
             "dist": {
                 "type": "path",
                 "url": "../excel-importer",
-                "reference": "e7a45d1ae417f183548121357f599684e43fb543",
+                "reference": "01a32435185682662cd5c423b0488b0c459c8b55",
                 "shasum": null
             },
             "require": {
@@ -1991,7 +2046,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Legacy-Login",
-                "reference": "80f3596a43ce4b726bed97df9228e76d313753a7",
+                "reference": "8506fe5f51fa40d647f845097c1e876d02f532df",
                 "shasum": null
             },
             "require": {
@@ -2045,7 +2100,7 @@
             "dist": {
                 "type": "path",
                 "url": "../SuperSort",
-                "reference": "6ad0c3dc257e7a70579c5e5b4c8ddcda762011f1",
+                "reference": "c7e69350b8385a0c83ce4651760d087bc758cde6",
                 "shasum": null
             },
             "require": {
@@ -2309,30 +2364,26 @@
         },
         {
             "name": "yiisoft/yii2-bootstrap",
-            "version": "2.0.6",
+            "version": "2.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-bootstrap.git",
-                "reference": "3fd2b8c950cce79d60e9702d6bcb24eb3c80f6c5"
+                "reference": "02a54d868343ed11d02f0f0f8cbbecb590e0cb3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/3fd2b8c950cce79d60e9702d6bcb24eb3c80f6c5",
-                "reference": "3fd2b8c950cce79d60e9702d6bcb24eb3c80f6c5",
+                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/02a54d868343ed11d02f0f0f8cbbecb590e0cb3f",
+                "reference": "02a54d868343ed11d02f0f0f8cbbecb590e0cb3f",
                 "shasum": ""
             },
             "require": {
                 "bower-asset/bootstrap": "3.3.* | 3.2.* | 3.1.*",
-                "yiisoft/yii2": ">=2.0.6"
+                "yiisoft/yii2": "~2.0.6"
             },
             "type": "yii2-extension",
             "extra": {
                 "branch-alias": {
                     "dev-master": "2.0.x-dev"
-                },
-                "asset-installer-paths": {
-                    "npm-asset-library": "vendor/npm",
-                    "bower-asset-library": "vendor/bower"
                 }
             },
             "autoload": {
@@ -2355,7 +2406,7 @@
                 "bootstrap",
                 "yii2"
             ],
-            "time": "2016-03-17T03:29:28+00:00"
+            "time": "2017-10-09T19:48:22+00:00"
         },
         {
             "name": "yiisoft/yii2-composer",

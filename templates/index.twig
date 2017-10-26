@@ -16,3 +16,15 @@
 {#{% for entry in entries %}
     {{ entry.title }}<br><br><br>
 {% endfor %}#}
+
+{% set shouldCache = true %}
+{% static cache shouldCache %}
+    <html>
+    <head>
+        <title>Test title</title>
+    </head>
+    <body>
+        <div>Test body</div>
+    </body>
+    </html>
+{% endstatic %}

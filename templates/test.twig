@@ -1,1 +1,11 @@
-asdf
+{% set shouldCache = true %}
+{% static cache shouldCache %}
+<html>
+<head>
+    <title>Test title</title>
+</head>
+<body>
+<div>Test body</div>
+</body>
+</html>
+{% endstatic %}

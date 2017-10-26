@@ -24,6 +24,11 @@
             "relative": true,
             "map": "/../Legacy-Login",
             "to": "/home/vagrant/Legacy-Login/"
+        },
+        {
+            "relative": true,
+            "map": "/../craft-static",
+            "to": "/home/vagrant/craft-static/"
         }
     ],
     "databases": [
